@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?import java.lang.*?> 
+<?import javafx.scene.canvas.*?> 
+<?import javafx.scene.control.*?> 
+<?import javafx.scene.layout.*?> 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<HBox alignment="CENTER" prefHeight="374.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="application.dataController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="220" prefWidth="300">
+         <children>
+            <TableView fx:id="mytable" prefHeight="306.0" prefWidth="177.0">
+              <columns>
+                <TableColumn prefWidth="75.0" fx:id="name" text="이름" />
+                <TableColumn prefWidth="75.0" fx:id="nickname" text="별명" />
+                <TableColumn prefWidth="75.0" fx:id="kind" text="종족" />
+              </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets right="10.0" />
+               </VBox.margin>
+            </TableView>
+            <Button fx:id="push" mnemonicParsing="false" prefHeight="22.0" prefWidth="254.0" text="추가하기" onAction="#pushbutton">
+               <VBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+      <ImageView fx:id="image" fitHeight="356.0" fitWidth="294.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </ImageView>
+   </children>
+</HBox>
+            

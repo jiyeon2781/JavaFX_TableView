@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?import java.lang.*?> 
+<?import javafx.scene.canvas.*?> 
+<?import javafx.scene.control.*?> 
+<?import javafx.scene.layout.*?> 
+<?import java.net.URL ?> 
+<?import javafx.scene.text.*?> 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+<?import javafx.collections.FXCollections?>
+
+<VBox alignment="CENTER" prefHeight="415" prefWidth="280.0"
+	xmlns="http://javafx.com/javafx/8.0.231"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addController">
+	<children>
+		<Text strokeType="OUTSIDE" text="정보 입력" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="406.109375">
+			<font>
+				<Font size="30.0" />
+			</font>
+		</Text>
+		<Text strokeType="OUTSIDE" text="이름">
+			<font>
+				<Font size="18.0" />
+			</font>
+			<VBox.margin>
+				<Insets left="10.0" top="10.0" />
+			</VBox.margin>
+		</Text>
+		<TextField fx:id="nameText" prefHeight="22.0"
+			prefWidth="200.0">
+			<VBox.margin>
+				<Insets left="40.0" right="40.0" />
+			</VBox.margin>
+		</TextField>
+		<Text strokeType="OUTSIDE" text="별명">
+			<font>
+				<Font size="18.0" />
+			</font>
+			<VBox.margin>
+				<Insets left="10.0" top="30.0" />
+			</VBox.margin>
+		</Text>
+		<TextField fx:id="nicknameText" prefHeight="22.0"
+			prefWidth="200.0">
+			<VBox.margin>
+				<Insets left="40.0" right="40.0" />
+			</VBox.margin>
+		</TextField>
+		<Text strokeType="OUTSIDE" text="종족">
+			<font>
+				<Font size="18.0" />
+			</font>
+			<VBox.margin>
+				<Insets left="10.0" top="30.0" />
+			</VBox.margin>
+		</Text>
+		<ComboBox fx:id="combo" prefHeight="22.0" prefWidth="158.0"
+			promptText="Select">
+			<items>
+				<FXCollections fx:factory="observableArrayList">
+					<String fx:value="스폰지" />
+					<String fx:value="불가사리" />
+					<String fx:value="오징어" />
+					<String fx:value="게" />
+					<String fx:value="물고기" />
+					<String fx:value="기타" />
+				</FXCollections>
+			</items>
+			<VBox.margin>
+				<Insets left="10.0" />
+			</VBox.margin>
+		</ComboBox>
+		<Button fx:id="Yesbtn" alignment="CENTER"
+			mnemonicParsing="false" prefHeight="22.0" prefWidth="136.0" text="확인"
+			onAction="#yesbutton">
+			<VBox.margin>
+				<Insets left="10.0" top="30.0" />
+			</VBox.margin>
+			<font>
+				<Font size="15.0" />
+			</font>
+		</Button>
+		<Button fx:id="Nobtn" alignment="CENTER"
+			mnemonicParsing="false" prefHeight="22.0" prefWidth="136.0" text="취소"
+			onAction="#nobutton">
+			<VBox.margin>
+				<Insets left="10.0" top="10.0" />
+			</VBox.margin>
+			<font>
+				<Font size="15.0" />
+			</font>
+		</Button>
+	</children>
+</VBox>
+
